@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasanthakumar M — Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo">Vasanthakumar M</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Vasanthakumar M</h1>
+        <h3>And I'm a <span>Backend Developer</span></h3>
+        <p>
+          Backend Developer with 5+ years of experience building cloud-native,
+          high-performance applications. Skilled in Node.js, Python, AWS
+          serverless services, ETL systems and distributed data processing
+          (Kafka, PySpark). I design scalable architectures, optimise backend
+          performance and deliver production-ready solutions for enterprise and
+          financial domains.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="assets/cv.pdf" class="btn" download>Download CV</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <!-- kept same photo filename as original — ensure images/profile.png exists -->
+        <img src="images/profile.png" alt="Vasanthakumar" />
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+      <!-- <div class="about-img">
+        <img src="images/about.png" alt="About Vasanthakumar" />
+      </div> -->
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Backend Developer</h3>
+        <p>
+          I am a backend developer experienced in building cloud-native and
+          scalable applications. I have worked on projects across insurance,
+          travel and fintech domains. My strengths include Node.js and Python
+          development, serverless architectures on AWS (Lambda, Connect),
+          distributed processing with Kafka & PySpark, and designing reliable ETL
+          pipelines and data integrations.
+        </p>
+
+        <div class="about-more">
+          <h4>Key Technologies</h4>
+          <ul>
+            <li>Node.js · Python · JavaScript</li>
+            <li>AWS Lambda · Amazon Connect · DynamoDB</li>
+            <li>Kafka · PySpark · PostgreSQL · MongoDB</li>
+            <li>Serverless Framework · Redis · Azure Blob</li>
+            <li>Angular (front-end exposure)</li>
+          </ul>
+        </div>
+
+        <a href="assets/cv.pdf" class="btn" download>Read More / Full CV</a>
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Backend Development</h3>
+          <p>
+            Design and implement robust backend services using Node.js and Python,
+            REST APIs, microservices and performance optimizations.
+          </p>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-cloud"></i>
+          <h3>Cloud & Serverless Solutions</h3>
+          <p>
+            Architect and deploy serverless applications on AWS (Lambda, API GW,
+            DynamoDB, Amazon Connect) for scalable, cost-effective systems.
+          </p>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-data"></i>
+          <h3>ETL & Data Engineering</h3>
+          <p>
+            Build ETL pipelines, streaming integrations and data processing using
+            PySpark, Kafka, Azure Blob storage and PostgreSQL.
+          </p>
+          <!-- <a href="#" class="btn">Read More</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Selected <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/port1.png" alt="Air Canada Customer Care" />
+          <div class="portfolio-layer">
+            <h4>Air Canada Customer Care</h4>
+            <p>
+              Backend and cloud work for a customer-care application using AWS
+              Lambda, Amazon Connect, Serverless Framework and AWS Lex.
+            </p>
+            <a href="https://www.aircanada.com/in/en/aco/home/fly/customer-support.html#/" target="_blank" rel="noopener noreferrer">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/port2.png" alt="Xago Cryptocurrency Platform" />
+          <div class="portfolio-layer">
+            <h4>Xago — Cryptocurrency Platform</h4>
+            <p>
+              Built backend services for an XRP-based cryptocurrency platform
+              (buy/sell/convert) — Node.js, MongoDB, Redis, AWS infrastructure.
+            </p>
+            <a href="https://xago.io/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/port3.jpeg" alt="Certainti.AI ETL" />
+          <div class="portfolio-layer">
+            <h4>Certainti.AI — ETL System</h4>
+            <p>
+              Developing ETL & data pipelines to power tax-consulting features —
+              Python, PySpark, Kafka, Azure Blob, PostgreSQL.
+            </p>
+            <a href="https://www.certainti.ai/" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/port5.jpg" alt="Pending project" />
+          <div class="portfolio-layer">
+            <h4>Pending..</h4>
+            <p>
+              Under development.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <div class="contact-container">
+        <p class="contact-info">
+          <i class="bx bxs-map"></i>
+          <strong>Location:</strong> Coimbatore, India
+        </p>
+
+        <p class="contact-info">
+          <i class="bx bxs-phone"></i>
+          <strong>Phone:</strong>
+          <a href="tel:+919659206623">+91 96592 06623</a>
+        </p>
+
+        <p class="contact-info">
+          <i class="bx bxs-envelope"></i>
+          <strong>Email:</strong>
+          <a href="mailto:vasanht08@gmail.com">vasanht08@gmail.com</a>
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/vasanthakumar08/" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <!-- <a href="https://github.com/vasanth08" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-github"></i>
+          </a> -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Vasanthakumar M | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTap">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <script>
+      /* Minimal typed.js initialization kept similar to original (if script.js doesn't handle it) */
+      if (typeof Typed !== "undefined") {
+        const typed = new Typed(".multiple-text", {
+          strings: ["Backend Developer", "Cloud Engineer", "ETL Engineer"],
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 1500,
+          loop: true
+        });
+      }
+    </script>
+  </body>
+</html>
