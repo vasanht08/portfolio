@@ -20,15 +20,63 @@
       rel="stylesheet"
     />
   </head>
+  <script>
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+      navbar.classList.toggle('active');
+    };
+
+    document.querySelectorAll('.navbar a').forEach(link =>
+      link.addEventListener('click', () => navbar.classList.remove('active'))
+    );
+  </script>
+  <script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar a');
+    const menuIcon = document.querySelector('#menu-icon');
+
+    // Menu toggle
+    menuIcon.onclick = () => {
+      navbar.classList.toggle('active');
+    };
+
+    // Close mobile nav when clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+      });
+    });
+
+    // Scroll section active link
+    window.onscroll = () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    };
+  </script>
+
   <body>
     <!-- header -->
     <header class="header">
-      <a href="#" class="logo">Vasanthakumar M</a>
-
-      <i class="bx bx-menu" id="menu-icon"></i>
+      <!-- <i class="bx bx-menu" id="menu-icon"></i> -->
 
       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
+        <a href="#home">Home  </a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Projects</a>
